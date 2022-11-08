@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<div style="color:blue;font-size:80px;">
+			<script language="JavaScript">
+
+				var liczba1=prompt("c=","");
+				var liczba2=prompt("b=","");
+				var c_fob=parseFloat(liczba1);
+				var b_fob=parseFloat(liczba2);
+				
+				document.write("c="+c_fob.toFixed(3)+" cm"+"<br>");
+				document.write("b="+b_fob.toFixed(3)+" cm"+"<br>");
+				
+				a_fob=Math.sqrt(Math.pow(c_fob,2)-Math.pow(b_fob,2));
+				document.write("a="+a_fob.toFixed(3)+" cm"+"<br>");
+				
+				sin_alfa_fob=b_fob/c_fob;
+				document.write("sin="+sin_alfa_fob.toFixed(3)+"<br>");
+				
+				alfa_fob=Math.asin(b_fob/c_fob)*(180/Math.PI);
+				document.write("alfa="+alfa_fob.toFixed(3)+" st"+"<br>");
+				
+				obw_fob=(a_fob+b_fob+c_fob);
+				document.write("Obwod="+obw_fob.toFixed(3)+" cm"+"<br>");
+				
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<textarea cols="100" rows="100"></textarea>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Fobka - zadanie 71</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var a_fob=7;
+            var b_fob=21;
+            for(let i = 0;i<a_fob;i++)
+            {
+                if(i==0 || i==(a_fob-1))
+                {
+                    for(let j = 0;j<b_fob;j++)
+                    {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+                else
+                {
+                    document.write("*");
+                    for(let j = 2;j<b_fob;j++)
+                    {
+                        document.write("&nbsp&nbsp")
+                    }
+                    document.write("*");
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </body>
+</html>
+</textarea>

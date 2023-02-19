@@ -1,0 +1,38 @@
+<textarea cols="100" rows="100">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Fobka - zadanie 73</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var a_fob=prompt("Podaj Nazwisko");
+            var b_fob=prompt("Podaj Imię");
+            a_fob=(a_fob.length%4)+5;
+            b_fob=(b_fob.length%6)+20;
+            for(let i = 0;i<a_fob;i++)
+            {
+                if(i==0 || i==(a_fob-1))
+                {
+                    for(let j = 0;j<b_fob;j++)
+                    {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+                else
+                {
+                    document.write("*");
+                    for(let j = 2;j<b_fob;j++)
+                    {
+                        document.write("&nbsp&nbsp")
+                    }
+                    document.write("*");
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </body>
+</html>
+</textarea>
